@@ -1,0 +1,309 @@
+/* Стили секции контактов (contact-section) */
+.contact-section {
+    background: linear-gradient(to bottom, #86A8CB 0%, #FFF 73%);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Стили для заголовка "КОНТАКТЫ" */
+.contacts-title {
+    align-self: flex-start;
+    font-size: 96px;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Стили для секции контактов внутри контейнера */
+.contact-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center items horizontally */
+}
+
+/* Стили для обертки contact-info и карты */
+.contact-wrapper {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    width: 100%;
+    justify-content: space-between; /* Add to distribute space around items */
+}
+
+/* Стили для контактов */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex; /* Для выравнивания иконок и текста */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.contact-item span {
+    font-size: 1em;
+    font-family: Arial, sans-serif; /* или Alegreya, если хотите одинаковый шрифт */
+}
+
+/* Стили для контейнера карты */
+.map-container {
+    width: 60%; /* Занимает 60% ширины контейнера */
+}
+
+.map-container iframe {
+    width: 100%;   /* Карта занимает всю ширину map-container */
+    height: 450px; /* Высота карты */
+    border-radius: 38px;
+}
+
+/* Медиа-запрос для экранов меньше 1200px */
+@media (max-width: 1199px) {
+    .contact-wrapper {
+        flex-direction: column; /* Изменяем направление на вертикальное */
+        align-items: center;     /* Выравниваем элементы по центру */
+    }
+
+    .contact-info {
+        width: 100%;            /* Занимает всю ширину */
+        margin-left: 10px;
+        margin-bottom: 20px;    /* Добавляем отступ снизу */
+    }
+
+    .map-container {
+        width: 100%;            /* Занимает всю ширину */
+        order: -1;              /* Помещаем карту ВВЕРХ */
+    }
+
+    .map-container iframe {
+        height: 300px;       /* Уменьшаем высоту карты для маленьких экранов */
+        border-radius: 38px;
+    }
+
+    .legal-section {
+        order: 2; /* Помещаем секцию с юридической информацией ПОСЛЕ карты */
+    }
+
+}
+
+/* Legal Section Styles */
+.legal-section {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFF; /* Новый задний фон */
+    color: #000; /* Change the text color to black or any desired color */
+}
+
+.legal-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the start */
+}
+
+/* Styles for section titles */
+.legal-section .section-title {
+    font-size: 32px;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Заглавные буквы */
+}
+
+.legal-section p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Заглавные буквы */
+}
+
+/* Mobile styles for legal section */
+@media (max-width: 767px) {
+    .legal-section {
+        padding: 30px 0;
+    }
+
+    .legal-section .container {
+        padding: 0 5%;
+    }
+
+    .legal-section .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .legal-section p {
+        font-size: 16px;
+        margin-bottom: 3px;
+    }
+}
+
+/* Feedback Section Styles */
+.feedback-section {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFF;
+    color: #000;
+}
+
+.feedback-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Styles for section titles */
+.feedback-section .section-title {
+    font-size: 32px;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Feedback Form Styles */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* New layout for message and other contact info */
+.feedback-form .form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Make sure it takes full width */
+}
+
+.feedback-form .form-row textarea {
+    flex: 2;
+    height: 270px; /* Added fixed height for textarea */
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #EBEBEB; /* Set textarea background to grey */
+    max-width: calc(50% - 10px);
+}
+
+.feedback-form .form-row .contact-info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between; /* Added for vertical spacing */
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="tel"],
+.feedback-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    background-color: #EBEBEB;
+    width: 100%;
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+}
+
+.feedback-form .terms-agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feedback-form .terms-agreement input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.feedback-form .form-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.feedback-form .feedback-submit-button, /* Specific style for feedback submit button */
+.feedback-form .reset-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 14px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Alegreya', serif;
+    text-transform: uppercase;
+}
+
+.feedback-form .feedback-submit-button {
+    background: linear-gradient(to right, #B7DBFA 27%, #1E80D3 88%);
+}
+
+.feedback-form .reset-button {
+    background-color: #EBEBEB; /* Red */
+}
+
+/* Mobile styles for feedback section */
+@media (max-width: 767px) {
+    .feedback-section {
+        padding: 30px 0;
+    }
+
+    .feedback-section .container {
+        padding: 0 5%;
+    }
+
+    .feedback-section .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .feedback-form .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feedback-form .form-row textarea {
+        flex: none;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .feedback-form .form-row .contact-info-container {
+        flex: none;
+    }
+
+    .feedback-form input[type="text"],
+    .feedback-form input[type="tel"],
+    .feedback-form input[type="email"] {
+        font-size: 16px;
+    }
+
+    .feedback-form .form-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .feedback-form .feedback-submit-button,
+    .feedback-form .reset-button {
+        font-size: 16px;
+    }
+}
+
+/* Media query for screens smaller than 585px */
+@media (max-width: 585px) {
+    .contacts-title {
+        text-align: center; /* Center the text */
+        font-size: calc(13.5vw + 17px); /* Adjust the font size to fit */
+    }
+}

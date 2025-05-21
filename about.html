@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>ТК "МИР"</title>
+    <link rel="stylesheet" href="./css/about-page.css" />
+    <link rel="stylesheet" href="./css/frame.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="gradient-section">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="main.html"> <img src="./img/Logo.png" alt="Logo" class="logo" /></a>
+                </div>
+                <div class="icons-wrapper">
+                    <a href="tel:+74955320104" class="icon-circle phone-icon">
+                        <img src="./img/Phone.png" alt="Phone" />
+                    </a>
+                    <div class="icon-circle menu-icon" id="menuButton"> <!-- Кнопка меню -->
+                        <img src="./img/Menu.png" alt="Menu" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+<nav class="navigation">
+    <div class="container">
+        <div class="nav-links">
+            <a href="./about.html" class="nav-button">О Компании</a>
+            <a href="#" class="nav-button">Новости</a>
+            <a href="#" class="nav-button">Магазин</a>
+            <a href="./contact.html" class="nav-button">Контакты</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Затемнение экрана -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-buttons">
+            <a href="main.html">Главная</a>
+            <a href="./about.html">О компании</a>
+            <a href="#">Новости</a>
+            <a href="#">Магазин</a>
+            <a href="./contact.html">Контакты</a>
+            <a href="tel:+74955320104">+7 (495) 532-01-04</a>
+        </div>
+
+        <div class="contact-info">Контактная информация</div>
+        <div class="contact-info">info@tkmir.su</div>
+        <div class="contact-info">г. Москва, ул. Иркутская, 2к1</div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <h1 class="about-title">О компании</h1>
+            <h2 class="about-subtitle">Торговая компания «Мир» – надежные поставки промышленных материалов и оборудования</h2>
+            <p class="about-text">
+                Мы занимаемся оптовыми поставками высококачественных материалов и оборудования для промышленного сектора.
+                Сотрудничаем с ведущими производителями из разных стран, чтобы предложить нашим клиентам широкий ассортимент продукции по конкурентным ценам.
+            </p>
+        </div>
+    </section>
+
+   <!-- Directions Section -->
+    <section class="directions-section">
+        <div class="container">
+            <div id="originalDirections">
+                <div class="directions-wrapper">
+                    <div class="images-grid">
+                        <img src="./img/wood.png" alt="Пиломатериалы" class="direction-image"/>
+                        <img src="./img/math.png" alt="Промышленная химия" class="direction-image"/>
+                        <img src="./img/cam.png" alt="Продукты промышленного назначения" class="direction-image"/>
+                        <img src="./img/chair.png" alt="Электрооборудование" class="direction-image"/>
+                    </div>
+                    <div class="directions-text">
+                        <h2 class="directions-title">Наши ключевые направления</h2>
+                        <div class="direction-item">
+                            <h3 class="direction-subtitle">Пиломатериалы</h3>
+                            <p class="direction-description">– доски, брус, фанера, OSB и другие лесоматериалы для строительства и производства.</p>
+                        </div>
+                        <div class="direction-item">
+                            <h3 class="direction-subtitle">Промышленная химия</h3>
+                            <p class="direction-description">– сырье для предприятий, включая растворители, смолы, клеи, добавки и реагенты.</p>
+                        </div>
+                        <div class="direction-item">
+                            <h3 class="direction-subtitle">Продукты промышленного назначения</h3>
+                            <p class="direction-description">– металлопрокат, крепежные элементы, изоляционные материалы и др.</p>
+                        </div>
+                        <div class="direction-item">
+                            <h3 class="direction-subtitle">Электрооборудование</h3>
+                            <p class="direction-description">– компоненты для автоматизации, кабельная продукция, приборы учета и контроля.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="newDirections">
+                <h1>Наши ключевые направления</h1>
+
+                <div class="new-container">
+                    <div class="new-item image-first">
+                        <img class="new-image" src="./img/wood.png" alt="Пиломатериалы">
+                        <div class="new-text">
+                            <h2 style="text-align: right;">Пиломатериалы</h2>
+                            <ul style="text-align: right;">
+                                <li>доски, брус, фанера, OSB и другие лесоматериалы для строительства и производства</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-item text-first">
+                        <div class="new-text">
+                            <h2 style="text-align: left;"  id="electroEquipmentTitle">Электрооборудование</h2>
+                            <ul style="text-align: left;">
+                                <li>компоненты для автоматизации, кабельная продукция, приборы учета и контроля</li>
+                            </ul>
+                        </div>
+                        <img class="new-image" src="./img/chair.png" alt="Электро-оборудование">
+                    </div>
+                     <div class="new-item image-first">
+                        <img class="new-image" src="./img/math.png" alt="Промышленная химия">
+                        <div class="new-text">
+                            <h2 style="text-align: right;">Промышленная химия</h2>
+                            <ul style="text-align: right;">
+                                <li>сырье для предприятий, включая растворители, смолы, клеи, добавки и реагенты</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-item text-first">
+                        <div class="new-text">
+                            <h2 style="text-align: left;">Продукты промышленного назначения</h2>
+                            <ul style="text-align: left;">
+                                <li>металлопрокат, крепежные элементы, изоляционные материалы и др.</li>
+                            </ul>
+                        </div>
+                        <img class="new-image" src="./img/cam.png" alt="Продукты промышленного назначения">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="reasons-section">
+        <div class="container">
+            <h2 class="reasons-title">Почему выбирают нас?</h2>
+            <div class="reasons-wrapper">
+                <img src="./img/planeL.png" alt="Plane Left" class="plane-image left-plane" />
+                <div class="reasons-text">
+                    <div class="reason-block">
+                        <h3 class="reason-subtitle">Прямые контракты с производителями</h3>
+                        <p class="reason-description">гарантия качества и выгодных цен</p>
+                    </div>
+                    <div class="reason-block">
+                        <h3 class="reason-subtitle">Гибкая логистика</h3>
+                        <p class="reason-description">доставка морским, железнодорожным и автотранспортом</p>
+                    </div>
+                    <div class="reason-block">
+                        <h3 class="reason-subtitle">Индивидуальный подход</h3>
+                        <p class="reason-description">подбор ассортимента под требования заказчика</p>
+                    </div>
+                    <div class="reason-block">
+                        <h3 class="reason-subtitle">Таможенное оформление</h3>
+                        <p class="reason-description">полное сопровождение импортных поставок</p>
+                    </div>
+                </div>
+                <img src="./img/planeR.png" alt="Plane Right" class="plane-image right-plane" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <p class="contact-text regular">
+                    Мы работаем с предприятиями строительной, химической, энергетической и других отраслей, обеспечивая их надежными материалами и оборудованием.
+                </p>
+                <p class="contact-info bold">
+                    Свяжитесь с нами, чтобы обсудить условия сотрудничества!<br>
+                    Телефон: +7 (495) 532-01-04<br>
+                    Email: info@tkmir.su
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Section -->
+    <section class="email-section">
+       <div class="email-content">
+           <p class="email-text">УКАЖИТЕ E-MAIL, ЧТОБЫ МЫ МОГЛИ С ВАМИ СВЯЗАТЬСЯ</p>
+           <form class="email-form" id="emailForm">
+               <input type="email" class="email-input" id="emailInput" placeholder="ВВЕДИТЕ E-MAIL" required>
+               <button type="submit" class="submit-button">ОТПРАВИТЬ</button>
+               <label class="terms-checkbox">
+                   <input type="checkbox" id="termsCheckbox" required>
+                   <span class="terms-text">Отправляя данную форму, Вы подтверждаете свое согласие на обработку персональных данных</span>
+               </label>
+           </form>
+       </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>ГЛАВНАЯ</h4>
+                    <ul>
+                        <li><a href="./about.html">О компании</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>ИНФОРМАЦИЯ</h4>
+                    <ul>
+                        <li><a href="#">Условия доставки</a></li>
+                        <li><a href="#">Условия оплаты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>КАТАЛОГ</h4>
+                    <ul>
+                        <li><a href="#">Промышленная химия</a></li>
+                        <li><a href="#">Пиломатериалы</a></li>
+                        <li><a href="#">Продукты промышленного назначения</a></li>
+                        <li><a href="#">Электрооборудование</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>НАШИ КОНТАКТЫ</h4>
+                    <ul>
+                        <li><a href="tel:+74955320104">+7 (495) 532-01-04</a></li>
+                        <li>г. Москва, ул. Иркутская, 2к1</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/frame.js"></script>
+    <script src="./js/email-receiver.js"></script>
+    <script src="./js/electronics-formating.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+/* Стили секции "О компании" */
+.about-section {
+    width: 100%;
+    background: linear-gradient(to bottom, #86A8CB 0%, #FFF 73%);
+    padding: 37px 0px 0px;
+}
+
+.about-title {
+    font-family: 'Alegreya', serif;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #000;
+}
+
+.about-subtitle {
+    font-family: 'Alegreya', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 53px;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+.about-text {
+    font-family: 'Alegreya', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* Mobile styles for about section */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 32px;
+        margin-top: 15px;
+    }
+    .about-subtitle {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+    .about-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+/* Стили секции "Наши направления" */
+.directions-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 0px 100px;
+}
+
+.directions-wrapper {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-end;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 219px);
+    grid-auto-rows: 332px;
+    gap: 0;
+}
+
+.direction-image {
+    width: 219px;
+    height: 332px;
+    object-fit: cover;
+}
+
+.directions-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 467px;
+}
+
+.directions-title {
+    font-family: 'Alegreya', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 48px;
+    text-align: right;
+}
+
+.direction-item {
+    margin-bottom: 32px;
+    text-align: right;
+}
+
+.direction-subtitle {
+    font-family: 'Alegreya', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.direction-description {
+    font-family: 'Alegreya', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* Mobile styles for directions section */
+@media (max-width: 768px) {
+    .directions-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .images-grid {
+        grid-template-columns: repeat(2, 140px);
+        grid-auto-rows: 210px;
+        margin-bottom: 32px;
+    }
+    .direction-image {
+        width: 140px;
+        height: 210px;
+    }
+    .directions-title {
+        font-size: 32px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    .direction-subtitle {
+        font-size: 20px;
+    }
+    .direction-description {
+        font-size: 20px;
+    }
+    .direction-item {
+        text-align: center;
+    }
+}
+
+/* Стили секции "Почему выбирают нас" */
+.reasons-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+}
+
+.reasons-title {
+    font-family: 'Alegreya', serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.reasons-wrapper {
+    height: 842px;
+    display: grid;
+    grid-template-columns: auto 324px auto;
+    gap: 69px;
+    align-items: center;
+    position: relative;
+    transition: gap 0.3s ease; /* Transition только для gap */
+    max-width: 1440px; /* Задаем максимальную ширину для wrapper */
+    margin: 0 auto; /* Центрируем wrapper */
+}
+
+.plane-image {
+    width: 303px;
+    height: 842px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+.left-plane {
+    left: 0;
+    grid-column: 1;
+}
+
+.right-plane {
+    right: 0;
+    grid-column: 3;
+}
+
+.reasons-text {
+    grid-column: 2;
+    width: 100%;
+    max-width: 324px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    position: relative;
+    z-index: 1;
+    word-break: break-word;
+    text-align: center;
+    text-shadow:
+        -0   -1px 0   #FFFFFF,
+         0   -1px 0   #FFFFFF,
+        -0    1px 0   #FFFFFF,
+         0    1px 0   #FFFFFF,
+        -1px -0   0   #FFFFFF,
+         1px -0   0   #FFFFFF,
+        -1px  0   0   #FFFFFF,
+         1px  0   0   #FFFFFF,
+        -1px -1px 0   #FFFFFF,
+         1px -1px 0   #FFFFFF,
+        -1px  1px 0   #FFFFFF,
+         1px  1px 0   #FFFFFF,
+        -1px -1px 0   #FFFFFF,
+         1px -1px 0   #FFFFFF,
+        -1px  1px 0   #FFFFFF,
+         1px  1px 0   #FFFFFF;
+}
+
+.reason-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 324px;
+    margin: 0 auto;
+}
+
+.reason-subtitle {
+    font-family: 'Alegreya', serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    max-width: 324px;
+    margin: 0 auto;
+}
+
+.reason-description {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 1.4;
+    text-align: center;
+    width: 100%;
+    max-width: 324px;
+    margin: 0 auto;
+}
+
+/* Медиа-запрос для сближения картинок */
+@media (max-width: 1440px) {
+    .reasons-wrapper {
+        gap: 20px; /* Уменьшаем gap, чтобы картинки сближались */
+    }
+}
+
+/* Когда картинки соприкоснулись - фиксируем расположение */
+@media (max-width: 1300px) {   .reasons-wrapper {
+      grid-template-columns: 303px 324px 303px; /* фиксированные размеры колонок */
+      justify-content: center; /* Выравниваем все колонки по центру */
+  }
+
+  .left-plane {
+      position: relative; /* Убираем absolute позиционирование */
+      left: auto; /* Сбрасываем left */
+  }
+
+  .right-plane {
+      position: relative; /* Убираем absolute позиционирование */
+      right: auto; /* Сбрасываем right */
+  }
+}
+
+/* Mobile Styles for Reasons Section */
+@media (max-width: 650px) {
+    .reasons-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .reasons-wrapper {
+        grid-template-columns: 215px 190px 215px;
+        height: auto; /* Adjust height */
+        gap: 20px;
+    }
+
+    .plane-image {
+        position: relative; /* Remove absolute positioning */
+        width: 213px; /* Set width */
+        height: auto; /* Adjust height */
+        margin: 0 auto; /* Center the images */
+    }
+
+    .left-plane {
+        order: 1; /* Display above text */
+        grid-column: auto; /* Reset grid-column */
+    }
+
+    .right-plane {
+        order: 3; /* Display below text */
+        grid-column: auto; /* Reset grid-column */
+    }
+
+    .reasons-text {
+        order: 2; /* Place between images */
+        grid-column: auto; /* Reset grid-column */
+        text-align: center;
+        max-width: 100%; /* Take up full width */
+        padding: 0 10px;
+    }
+
+    .reason-subtitle {
+        font-size: 15px;
+    }
+
+    .reason-description {
+        font-size: 15px;
+    }
+}
+
+/* Стили секции "Контакты" */
+.contact-section {
+    margin-top: 41px;
+    margin-bottom: 34px;
+}
+
+.contact-content {
+    width: 942px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-text,
+.contact-info {
+    font-family: 'Alegreya', serif;
+    font-size: 28px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.contact-text {
+    font-weight: 400;
+}
+
+.contact-info {
+    font-weight: 700;
+}
+
+/* Mobile styles for contact section */
+@media (max-width: 992px) {
+    .contact-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contact-text,
+    .contact-info {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-text,
+    .contact-info {
+        font-size: 20px;
+    }
+}
+
+/* NEW STYLES FOR ALTERNATE DIRECTIONS SECTION - MOBILE */
+#newDirections {
+    display: none; /* Hidden by default */
+}
+
+/* Styles for the new directions layout */
+@media (max-width: 768px) {
+    #originalDirections {
+        display: none; /* Hide the original directions */
+    }
+
+    #newDirections {
+        display: block; /* Show the new directions */
+    }
+
+    .new-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .new-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .new-image {
+        width: 29vw;
+        height: auto;
+        background-color: #ddd; /* Placeholder */
+        margin-right: 10px;
+    }
+
+    .new-text {
+        flex: 1;
+        font-size: 20px;
+    }
+
+    #newDirections h1 {
+        margin-top: 0;
+        font-size: 2em; /* Adjust as needed */
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 5px;
+    }
+
+    /* Align left for image-first */
+    .image-first ul {
+        text-align: left;
+    }
+
+    /* Align right for text-first */
+    .text-first ul {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .new-text {
+        font-size: 15px;
+    }
+
+    .new-text h2 {
+        font-size: 20px;
+    }
+}

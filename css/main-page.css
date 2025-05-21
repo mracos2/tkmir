@@ -1,0 +1,30 @@
+/* Стили секции "О компании" (теперь - секция с видео) (about-section) */
+.about-section {
+    background: linear-gradient(to bottom, #86A8CB 0%, #FFF 73%);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section video {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
