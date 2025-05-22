@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Админ-панель</h1>
+        <a href="{{ url_for('add_news') }}" class="btn btn-success">Добавить новость</a>
+        <hr>
+        <h2>Список новостей:</h2>
+        <ul>
+            {% for item in news %}
+                <li>{{ item.title }} - <a href="#">Редактировать</a> - <a href="#">Удалить</a></li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('logout') }}">Выйти</a>
+    </div>
+</body>
+</html>

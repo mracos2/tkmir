@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ news_item.title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ news_item.title }}</h1>
+        <p>Дата публикации: {{ news_item.date_created }}</p>
+        <p>{{ news_item.content }}</p>
+        <a href="{{ url_for('index') }}">Назад к списку новостей</a>
+    </div>
+</body>
+</html>
